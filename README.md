@@ -84,7 +84,7 @@ end
 ```
 
 ```ruby
-xray('https://blog.ycombinator.com', ['img@alt > external? | downcase'])
+xray('https://blog.ycombinator.com', ['img@src > external? | downcase'])
 ```
 
 To select exteranl images on ycombinator's blog, you can use the `>` character.
