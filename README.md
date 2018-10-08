@@ -77,9 +77,11 @@ xray('https://example.com', 'body', 'h2 | downcase | concat_test')
 As the above example demonstartes, you can also pipe multiple functions.
 
 ## Filters
+```ruby
 def external?(val)
   URI(val).host != 'ycombinator.com'
 end
+```
 
 ```ruby
 xray('https://blog.ycombinator.com', ['img@alt > external? | downcase'])
